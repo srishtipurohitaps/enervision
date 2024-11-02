@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Pacing</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="transparentlogo.png" alt="EnerVision Logo" id="logo" width="200px" height="200px">
+        <h1>Activity Pacing</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tracker.html">Symptom Tracker</a>
+            <a href="pacing.html">Activity Pacing</a>
+            <a href="resources.html">Resources</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Set Your Daily Pacing Goals</h2>
+            <input type="time" id="reminderTime">
+            <button onclick="setReminder()">Set Reminder</button>
+            <p id="reminderMessage"></p>
+
+            <h3>Pacing Reminder Log</h3>
+            <ul id="pacingLog"></ul>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CFS Tracker - All rights reserved.</p>
+    </footer>
+</body>
+</html>

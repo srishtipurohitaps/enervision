@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="transparentlogo.png" alt="EnerVision Logo" id="logo" width="200px" height="200px">
+        <h1>Symptom Tracker</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tracker.html">Symptom Tracker</a>
+            <a href="pacing.html">Activity Pacing</a>
+            <a href="resources.html">Resources</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tracker-section fade-in">
+            <h2>Log Your Symptoms</h2>
+            <div class="slider-container">
+                <label for="fatigue">Fatigue Level</label>
+                <input type="range" id="fatigue" min="0" max="10" value="5" oninput="updateValue('fatigueValue', this.value)">
+                <span id="fatigueValue">5</span>
+            </div>
+            <div class="slider-container">
+                <label for="pain">Pain Level</label>
+                <input type="range" id="pain" min="0" max="10" value="5" oninput="updateValue('painValue', this.value)">
+                <span id="painValue">5</span>
+            </div>
+            <button onclick="logSymptoms()">Log Symptoms</button>
+            <p id="logMessage" class="fade-in"></p>
+
+            <!-- New symptom log section -->
+            <h3>Symptom Log</h3>
+            <ul id="symptomLog"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 EnerVision - All rights reserved.</p>
+    </footer>
+</body>
+</html>
